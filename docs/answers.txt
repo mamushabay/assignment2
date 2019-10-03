@@ -1,53 +1,60 @@
-(a)
-On branch master
-Your branch is up to date with 'origin/master'.
+[E] 
+(a) On branch master Your branch is up to date with 'origin/master'.
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-	modified:   README.md
+Changes not staged for commit: (use "git add <file>..." to update what
+will be committed) (use "git restore <file>..." to discard changes in
+working directory) modified:   README.md
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	docs/
+Untracked files: (use "git add <file>..." to include in what will be
+committed) docs/
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-(b)
-10
-git rev-list --all --count
+(b) 10 
+    git rev-list --all --count
 
-(c)
-Tue Oct  1 21:48:57 EDT 2019
-date -r .gitignore
+(c) Tue Oct  1 21:48:57 EDT 2019 
+    date -r .gitignore
 
-(d)
-(1) one use of branching is when there is a bug or missing feature we do not  push the new feature before we make sure it works. So branching help us to develop and test our code without affecting the master.
-(2) another use of branching is it allows different developers to branch
-out from master branch and divide the work and once they done they will
-merge to the master.
+(d) 
+(1) one use of branching is when there is a bug or missing feature
+we do not  push the new feature before we make sure it works. So
+branching help us to develop and test our code without affecting the
+master.  
+(2) another use of branching is it allows different developers
+to branch out from master branch and divide the work and once they done
+they will merge to the master.
 
-(e)
-The git log command displays committed snapshots. It lists the project history, filter it, and search for specific changes. While git status inspect the working directory and the staging area and show which changes stages, which files aren't being tracked. Opposite of git log, git status does not show any information regarding the commited history.
+(e) 
+The git log command displays committed snapshots. It lists the
+project history, filter it, and search for specific changes. While git
+status inspect the working directory and the staging area and show which
+changes stages, which files aren't being tracked. Opposite of git log,
+git status does not show any information regarding the commited history.
 
-(f)
+(f) 
 git log --follow Vehicle.h
 
-(g)
+(g) 
 git log --grep='file'
 
-(h)
-	(I) Inheritance is Inheritance is a mechanism in which one class acquires the property of another class.
-	(II)  Polymorhism is ability to process objects differently
-depending on their data type or class. Simply put it is the ability to redefine methods for derived classes.
-	(III) Encapsulation is wrapping up of data under a single unit.
-It is the mechanism that binds together code and the data. Also
-encapsulation provide a protective shield that prevents the data from being accessed by the code outside.
+(h) 
+(I) Inheritance is Inheritance is a mechanism in which one class
+acquires the property of another class.  
+(II)  Polymorhism is ability to
+process objects differently depending on their data type or class.
+Simply put it is the ability to redefine methods for derived classes.
+(III) Encapsulation is wrapping up of data under a single unit.  It is
+the mechanism that binds together code and the data. Also encapsulation
+provide a protective shield that prevents the data from being accessed
+by the code outside.
 
-(i)
-In Integration Manager Workflow each developer makes push to his/her own public repository but in Dictator and Lieutenants Workflow each developer pushes changes to the assigned lieutenant repository.
+(i) In Integration Manager Workflow each developer makes push to his/her
+own public repository but in Dictator and Lieutenants Workflow each
+developer pushes changes to the assigned lieutenant repository.
 
-(j)
-Dictator and Lieutenants Workflow allows the project leader to control much of the work and resolve conflicts of only few subsets of big numbers of repositories.
+(j) Dictator and Lieutenants Workflow allows the project leader to
+control much of the work and resolve conflicts of only few subsets of
+big numbers of repositories.
 
 
