@@ -9,20 +9,20 @@
 
 class Car : public PoweredVehicle {
 
-private:
-    string myEngineSize;
+	private:
+		string myEngineSize;
 
-public:
-    Car();
+	public:
+		Car();
 
-    explicit Car(string brand, string model, string fuelType,
-                 string engineSize);
+		explicit Car(string brand, string model, string fuelType,
+				string engineSize);
 
-    virtual ~Car();
-    string getEngineSize();
-    void setEngineSize(string engineSize);
-    virtual double mileageEstimate(double time);
-    virtual string toString();
+		virtual ~Car();
+		string getEngineSize();
+		void setEngineSize(string engineSize);
+		virtual double mileageEstimate(double time);
+		virtual string toString();
 };
 
 

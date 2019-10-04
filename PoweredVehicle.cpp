@@ -5,19 +5,19 @@
 
 
 PoweredVehicle::PoweredVehicle() {
-    setFuelType("unknown");
+	setFuelType("unknown");
 }
 
 PoweredVehicle::~PoweredVehicle() = default;
 
 string PoweredVehicle::getFuelType() {
-    return fuelType;
+	return fuelType;
 }
 
 void PoweredVehicle::setFuelType(string fuel) {
-    fuelType = fuel;
+	fuelType = fuel;
 }
 
 string PoweredVehicle::toString() {
-    return Vehicle::toString() + "\n\tFuelType: " + getFuelType();
+	return Vehicle::toString() + "\n\tFuelType: " + getFuelType();
 }
