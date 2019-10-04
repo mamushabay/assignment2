@@ -8,19 +8,19 @@
 #include "Vehicle.h"
 
 class PoweredVehicle : public Vehicle {
-protected :
-    string fuelType;
+	protected :
+		string fuelType;
 
-public:
-    PoweredVehicle();
+	public:
+		PoweredVehicle();
 
-    virtual ~PoweredVehicle();
-    virtual string toString();
-    virtual double mileageEstimate(double time) = 0;
+		virtual ~PoweredVehicle();
+		virtual string toString();
+		virtual double mileageEstimate(double time) = 0;
 
-    string getFuelType();
+		string getFuelType();
 
-    void setFuelType(string fuel);
+		void setFuelType(string fuel);
 };
 
 

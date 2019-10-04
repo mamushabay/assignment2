@@ -9,14 +9,14 @@
 
 class Skateboard : public Vehicle {
 
-public:
-    Skateboard();
+	public:
+		Skateboard();
 
-    explicit Skateboard(string brand, string model);
+		explicit Skateboard(string brand, string model);
 
-    virtual ~Skateboard();
-    virtual double mileageEstimate(double time);
-    virtual string toString();
+		virtual ~Skateboard();
+		virtual double mileageEstimate(double time);
+		virtual string toString();
 };
 
 
