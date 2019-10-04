@@ -57,4 +57,12 @@ developer pushes changes to the assigned lieutenant repository.
 control much of the work and resolve conflicts of only few subsets of
 big numbers of repositories.
 
-
+(5)
+The Driving simulator prototype used both  polymorphism and encapsulation.
+ (i) it uses polymorphism because
+     int declaration of Vehicle **vehiclesArray = new Vehicle *[capacity];
+     the pointer vehicleArray process objects differently depending on
+     their data type.
+ (ii) it also uses Encapslulation because each class has its own data
+      and method wrapped in a single unit. Also private member of one
+      class can't be accessed by outside code.
