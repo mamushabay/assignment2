@@ -10,17 +10,18 @@
 class Toyota : public PoweredVehicle {
 
 private:
-    int myCarMileage;
+    int myCarAge;
 
 public:
     Toyota();
 
-    explicit Toyota(string brand, string model, string fuelType, int mileage );
+    explicit Toyota(string brand, string model, string fuelType, int carAge = 0);
 
     virtual ~Toyota();
-    string getCarAge();
+    int getCarAge();
     void setCarAge(int carAge);
-    virtual double mileageEstimate(int carAge);
+    
+    virtual double mileageEstimate(double times);
     virtual string toString();
 };
 

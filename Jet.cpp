@@ -12,7 +12,7 @@ Jet::Jet() {
     setModel("Mig");
 }
 
-Jet::Jet(string brand, string model, string fuelType, string engineCount) {
+Jet::Jet(string brand, string model, string fuelType, int engineCount) {
     setBrand(brand);
     setModel(model);
     setFuelType(fuelType);
@@ -21,21 +21,21 @@ Jet::Jet(string brand, string model, string fuelType, string engineCount) {
 
 Jet::~Jet() = default;
 
-string Jet::getEngineCount() {
+int Jet::getEngineCount() {
     return myEngineCount;
 }
 
-void Jet::setEngineCount(string engineCount) {
+void Jet::setEngineCount(int engineCount) {
     if (engineCount == 1 || engineCount == 2 ||
         engineCount == 3 || engineCount == 4) {
         myEngineCount = engineCount;
     } else {
-        myEngineSize = 1;
+        myEngineCount = 1;
     }
 
 }
 
-double Jet::mileageEstimate() {
+double Jet::mileageEstimate(double times) {
     srand(time(0));
     int mile = (rand() % 100) + 40;
     double mileage = mile * 1.0;
@@ -46,6 +46,6 @@ double Jet::mileageEstimate() {
 }
 
 string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Size: " +
-           getEngineCount();
+    return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine count: " +
+           std::to_string(getEngineCount());
 }

@@ -2,8 +2,8 @@
 // Created by Harege Abay on 10/3/19.
 //
 
-#ifndef DRIVINGSIMULATOR_JET_H
-#define DRIVINGSIMULATOR_JET_H
+#ifndef DRIVINGSIMULATOR_SKATEBOARD_H
+#define DRIVINGSIMULATOR_SKATEBOARD_H
 
 #include "Vehicle.h"
 

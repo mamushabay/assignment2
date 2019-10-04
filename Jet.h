@@ -15,15 +15,13 @@ private:
 public:
     Jet();
 
-    explicit Jet(string brand, string model, string fuelType,
-                 int engineCount);
-
+    explicit Jet(string brand, string model, string fuelType, int engineCount = 2);
     virtual ~Jet();
-    string getEngineCount();
+    int getEngineCount();
     void setEngineCount(int engineCount);
     virtual double mileageEstimate(double time);
     virtual string toString();
 };
 
 
-#endif //DRIVINGSIMULATOR_CAR_H
+#endif //DRIVINGSIMULATOR_JET_H

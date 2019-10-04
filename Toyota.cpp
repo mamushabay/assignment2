@@ -5,41 +5,40 @@
 #include "Toyota.h"
 
 Toyota::Toyota() {
-    myCarMileage = 60;
-    setBrand("Custom");
+    myCarAge = 0;
+    setBrand("Toyota");
     setModel("Tercel");
 }
 
-Toyota::Toyota(string brand, string model, string fuelType, int mileage) {
+Toyota::Toyota(string brand, string model, string fuelType, int carAge) {
     setBrand(brand);
     setModel(model);
     setFuelType(fuelType);
-    setCarMileage(mileage);
+    setCarAge(carAge);
 }
 
 Toyota::~Toyota() = default;
 
-int Toyota::getCarMileage() {
-    return myCarMileage;
+int Toyota::getCarAge() {
+    return myCarAge;
 }
-void Toyota::setCarAge(int mileage) {
-    if (mileage > 0 || carAge < 60) {
-        myCarMileage = mileage;
+void Toyota::setCarAge(int carAge) {
+    if (carAge > 0 || carAge < 60) {
+        myCarAge = carAge;
     } else {
-        myCarMileage = 60;
+        myCarAge = 0;
     }
 
 }
-
-double Toyota::mileageEstimate(int carAge) {
-    myCarMileage-= (carAge / myCarMileage);
+double Toyota::mileageEstimate(double time) {
+    double myCarMileage = time * (2 - (myCarAge / 10.0));
     if (fuelType == "electricity") {
-        mileage += mileage * 0.05;
+        myCarMileage += myCarMileage * 0.05;
     }
-    return mileage;
+    return myCarMileage;
 }
 
 string Toyota::toString() {
     return "-> Toyota\n" + PoweredVehicle::toString() + "\n\tCar age: " +
-           getCarAge();
+           std::to_string(getCarAge());
 }
